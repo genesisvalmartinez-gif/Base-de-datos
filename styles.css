@@ -1,35 +1,104 @@
-/* CONFIGURACIÓN DE TABLAS (ACTUALIZADO - SOLO COLOR EN ENCABEZADO) */
-table {
-    border-collapse: separate; 
-    border-spacing: 0;       
-    width: 100%;          
-    max-width: 1000px;    
-    margin: 40px auto;    
-    border: 1px solid #dddddd; /* Borde gris suave alrededor */
-    border-radius: 8px;        /* Esquinas redondeadas */
-    overflow: hidden;          
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+/*CONFIGURACION DEL ENCABEZADO*/
+
+/* Establece una imagen de fondo para el encabezado */
+#mi-encabezado {
+background-image: url('imagenes/Img.encabezado.jpeg'); /* Reemplaza 'ruta-de-tu-imagen.jpg'
+con la ubicación de tu imagen */
+background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+background-position: center; /* Centra la imagen en el encabezado */
+height: 35rem; /* Altura del encabezado (ajusta según tus necesidades) */
+
+color: #ffffff; /* Color del texto en el encabezado para asegurar la legibilidad */
+text-orientation: upright;
+text-align: center; /* Alinea el contenido al centro del encabezado */
+padding: 20px; /* Espacio de relleno interno para el contenido */
+
 }
 
-/* Color únicamente para el encabezado (Títulos de las columnas) */
-th {
-    background-color: rgba(107, 214, 247, 0.938); /* El celeste de tu menú */
-    color: #ffffff;            /* Texto blanco */
-    font-weight: bold;
-    text-transform: uppercase; 
-    font-size: 16px;
+/* Estilos adicionales para el Título en el encabezado */
+#mi-encabezado h1 {
+font-size: 45px; /* Tamaño de fuente del título */
+font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estilo para las celdas del cuerpo (Fondo blanco limpio) */
-th, td {
-    padding: 15px;         
-    text-align: left;      
-    vertical-align: middle; 
-    border-bottom: 1px solid #eeeeee; /* Línea divisoria muy suave entre filas */
-    background-color: #ffffff;         /* Todo el cuerpo se mantiene blanco */
+/* Estilos adicionales para el texto en el encabezado */
+#mi-encabezado p {
+font-size: 25px; /* Tamaño de fuente del texto del encabezado */
 }
 
-/* El "pie de página" de la tabla (la última línea) no lleva borde abajo para que no se duplique */
-tr:last-child td {
-    border-bottom: none;
+/*CONFIGURACION DEL MENU*/
+
+/* Establece el fondo transparente para el menú */
+nav {
+background-color: rgba(107, 214, 247, 0.938);
+padding: 20px;
+position: fixed; /* Posiciona el menú en la parte superior de la página */
+top: 0;
+left: 0;
+width: 100%;
+transition: background-color 0.5s; /* Transición suave para el cambio de color de
+fondo */
+
 }
+
+/* Estilos para los elementos menu*/
+ul {
+list-style-type: none;
+text-align: right;
+margin-right: 3rem;
+}
+
+/*elementos de la lista del menu*/
+li {
+display: inline;
+margin-right: 30px; /* Espacio entre elementos del menú */
+}
+
+a {
+text-decoration: none;
+color: #fffdfd; /* Color del texto del menú */
+font-weight: bold;
+}
+
+/* Cambia el color del enlace cuando se pasa el mouse por encima */
+a:hover {
+color: #f136d2f3; /* Cambia el color al pasar el mouse por encima */
+}
+
+/*CONFIGURACION DEL BODY*/
+body {
+/*configura los margenes de la página*/
+margin-top: 0px; /* Ajusta según la altura del menú */
+margin-left: 0px;
+margin-right: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/*CONFIGURACION DEL CONTENIDO*/
+.contenido {
+/* configura el color, tamaño de fuente y alineación del texto en el cuerpo de la
+página */
+color: #000000;
+font-size: 20px;
+padding: 5%;
+text-align:justify;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+background-color: rgb(238, 48, 181); /* Cambia el color de fondo a azul */
+padding: 10rem;
+color: #fffdfd;
+color: #ffffff; /* Color del texto en el encabezado para asegurar la legibilidad */
+text-align: center; /* Alinea el contenido al centro del encabezado */
+/* Espacio de relleno interno para el contenido */
+<head>
+ <style>
+  table {
+    border-collapse: separate; /* Necesario para que el espaciado funcione */
+    border-spacing: 10px;      /* Espacio entre las celdas */
+  }
+ </style>
+</head>
+
